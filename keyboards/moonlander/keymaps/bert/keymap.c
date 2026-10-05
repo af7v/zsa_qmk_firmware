@@ -370,7 +370,7 @@ void dance_2_finished(qk_tap_dance_state_t *state, void *user_data) {
     dance_state[2].step = dance_step(state);
     switch (dance_state[2].step) {
         case SINGLE_TAP: register_code16(KC_4); break;
-        case SINGLE_HOLD: layer_move(1); break;
+        case SINGLE_HOLD: layer_move(4); break;
         case DOUBLE_TAP: register_code16(KC_4); register_code16(KC_4); break;
         case DOUBLE_SINGLE_TAP: tap_code16(KC_4); register_code16(KC_4);
     }
